@@ -1,4 +1,4 @@
-## Step 1>> bash script.sh
+## Step 1>> bash create_docker.sh
 
 ## docker-compose up -d
 In the container run this command:
