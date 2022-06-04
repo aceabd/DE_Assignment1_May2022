@@ -1,8 +1,8 @@
 ## Step 1>> bash create_docker.sh
 
 ## docker-compose up -d
-In the container run this command:
-################
+In the container run this command to create the table:
+
 create table tweets
 (
     type      text,
@@ -17,7 +17,8 @@ COPY tweets(type, id, timestamp, query, user_name ,message)
     FROM '/file.csv'
     DELIMITER ','
     CSV HEADER;
-##################
+
+
 ## execute the sql query
 ## enable the dag data_transformation
 ## access the airflow from http://localhost:8080 username:airflow password:airflow
