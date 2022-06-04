@@ -8,7 +8,7 @@ docker-compose up -d
 sleep 5
 
 docker cp ./query.sql de_postgres:/file.sql
-docker cp ./example.csv de_postgres:/file.csv
+docker cp ./data_here.csv de_postgres:/file.csv
 docker exec -u postgres de_postgres psql postgres postgres -f /file.sql > /dev/null 2>&1
 docker exec airflow mkdir -p /home/airflow/data
 
